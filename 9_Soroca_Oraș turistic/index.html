@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://destepti.ro/wp-content/uploads/2016/08/Cetatea-Soroca-768x480.jpg">
+    <title>Soroca – Oraș Turistic</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #2b4d8f; }
+        h2 { color: #444; }
+        ul { margin-bottom: 20px; }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th { background-color: #ddd; }
+        img {
+            width: 450px;
+            border: 2px solid #333;
+        }
+        .formular {
+            background: white;
+            padding: 15px;
+            width: 350px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TITLU + PARAGRAF -->
+    <h1>Soroca – Orașul Cetăților și al Lumânărilor Recunoștinței</h1>
+    <p>
+        Soroca este unul dintre cele mai frumoase orașe ale Republicii Moldova, 
+        renumit pentru patrimoniul istoric, cultural și natural. 
+        Cetatea Soroca, monument unic în Europa, atrage anual mii de turiști. 
+        Orașul găzduiește de asemenea Podul Europenilor, Dealul țiganilor și 
+        celebra „Lumânare a Recunoștinței”.
+    </p>
+
+
+    <!-- LISTĂ CU OBIECTIVE TURISTICE + SUBLISTE -->
+    <h2>Obiective turistice importante din Soroca</h2>
+    <ul>
+        <li>Cetatea Soroca
+            <ul>
+                <li>Monument medieval din secolul XV</li>
+                <li>Muzeu istoric</li>
+                <li>Expoziții tematice</li>
+            </ul>
+        </li>
+
+        <li>Lumânarea Recunoștinței
+            <ul>
+                <li>Simbol al recunoștinței poporului moldovenesc</li>
+                <li>Punct panoramic asupra Nistrului</li>
+                <li>Scări de acces spectaculoase</li>
+            </ul>
+        </li>
+
+        <li>Podul Europenilor și zona centrală
+            <ul>
+                <li>Plimbări pe malul Nistrului</li>
+                <li>Clădiri istorice</li>
+                <li>Promenada orașului</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!-- LEGĂTURI -->
+    <h2>Legături utile</h2>
+    <p>
+        <a href="https://www.google.com/maps/place/Soroca" target="_blank">Hartă oraș Soroca</a> |
+        <a href="https://primsoroca.md" target="_blank">Pagina locală Soroca</a>
+    </p>
+
+
+    <!-- IMAGINE CU HARTĂ-IMAGINE + ZONE -->
+    <h2>Harta interactivă a orașului Soroca</h2>
+    <img src="HARTA_SOROCA.jpg" usemap="#mapaSoroca" alt="Harta orașului Soroca" width="200"height="400">
+     
+    <map name="mapaSoroca">
+        <!-- CETATEA -->
+        <area shape="circle" coords="150,200,60"
+              href="https://www.google.com/search?q=cetatea+soroca"
+              alt="Cetatea Soroca">
+
+        <!-- LUMÂNAREA -->
+        <area shape="rect" coords="300,20,430,160"
+              href="https://www.google.com/search?q=lumanarea+recunostintei+soroca"
+              alt="Lumânarea Recunoștinței">
+
+        <!-- CENTRUL ORAȘULUI -->
+        <area shape="rect" coords="20,20,130,120"
+              href="https://www.google.com/search?q=centrul+orasului+soroca"
+              alt="Centrul orașului Soroca">
+    </map>
+
+
+    <!-- TABEL PREȚURI BILETE -->
+    <h2>Prețuri bilete</h2>
+    <table>
+        <tr>
+            <th>Serviciu</th>
+            <th>Preț (MDL)</th>
+        </tr>
+        <tr>
+            <td>Vizită Cetatea Soroca</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Acces Lumânarea Recunoștinței</td>
+            <td>Gratis</td>
+        </tr>
+        <tr>
+            <td>Bilet autobuz</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+
+    <!-- IFRAME GOOGLE MAPS -->
+    <h2>Locația Soroca pe hartă</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.678339948645!2d28.308!3d48.159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c8f0370ab0e73f%3A0xc4ff1a3a3e65c0a7!2sSoroca!5e0!3m2!1sro!2smd!4v1700000000000"
+        width="500" height="350" 
+        style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+
+
+    <!-- FORMULAR REZERVĂRI -->
+    <h2>Formular pentru rezervări turistice</h2>
+    <form class="formular">
+        <label>Nume complet:</label><br>
+        <input type="text" name="nume" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Data vizitei:</label><br>
+        <input type="date" name="data" required><br><br>
+
+        <label>Număr persoane:</label><br>
+        <input type="number" name="persoane" min="1" max="20" required><br><br>
+
+        <label>Obiectiv turistic:</label><br>
+        <select name="obiectiv">
+            <option>Cetatea Soroca</option>
+            <option>Lumânarea Recunoștinței</option>
+            <option>Podul Europenilor</option>
+        </select><br><br>
+
+        <button type="submit">Trimite rezervarea</button>
+    </form>
+
+</body>
+</html>
