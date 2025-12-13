@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratoare 6_8 JavaScript</title>
+</head>
+
+<body>
+
+<h1>Laboratoare 6_8</h1>
+<p>Pagină pentru problemele din laboratoarele 6, 7 și 8.</p>
+
+<hr>
+
+<!-- ================= LAB 6 ================= -->
+<h2>Lab 6 _ Problema 8: Cronometru</h2>
+
+<button onclick="startCronometru()">Start</button>
+<button onclick="stopCronometru()">Stop</button>
+<button onclick="resetCronometru()">Reset</button>
+
+<p id="afisareTimp">0 secunde</p>
+
+<hr>
+
+<!-- ================= LAB 7 ================= -->
+<h2>Lab 7 _ Problema 4: Browser</h2>
+
+<p>
+Fundalul paginii este colorat automat în funcție de browser:
+<br>• verde _ Mozilla Firefox
+<br>• roșu _ Internet Explorer
+<br>• galben _ Google Chrome
+<br>• cyan _ alt browser
+</p>
+
+<hr>
+
+<!-- ================= LAB 8 ================= -->
+<h2>Lab 8 _ Problema 6: Imagini negative</h2>
+
+<input type="file" accept="image/*" onchange="incarcaImagine(event)">
+
+<br><br>
+
+<canvas id="canvasOriginal" width="300" height="300" style="border:1px solid black;"></canvas>
+<canvas id="canvasNegativ" width="300" height="300" style="border:1px solid black;"></canvas>
+
+<br><br>
+
+<button onclick="transformaNegativ()">Transformă în negativ</button>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="prob8_lab6.js"></script>
+<script src="prob4_lab7.js"></script>
+<script src="prob6_lab8.js"></script>
+
+</body>
+</html>
